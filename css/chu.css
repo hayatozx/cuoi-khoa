@@ -5,10 +5,8 @@
   width: 100%;
   left: 0px;
   background-color: white;
-
   display: flex;
   justify-content: space-evenly;
-  padding: 0 5px;
   font-size: 1pc;
 }
 .header-left p {
@@ -36,7 +34,7 @@
 .header {
   height: 50px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 .header-right i {
@@ -54,11 +52,7 @@
   background-color: black;
 }
 .container {
-  max-width: 960px;
-  margin: 0px auto;
-}
-.container {
-  max-width: 960px;
+  max-width: 1200px;
   margin: 0px auto;
 }
 nav {
@@ -72,7 +66,7 @@ nav {
   margin: 0;
   padding: 0;
   align-items: center;
-  margin-left: -220px;
+  /* margin-left: -220px; */
 }
 #main-menu {
   position: relative;
@@ -94,6 +88,7 @@ nav {
   list-style: none;
   width: 200px;
   display: none;
+  z-index: 100;
 }
 #main-menu li:hover > ul.sub-menu {
   display: block;
@@ -143,9 +138,11 @@ nav {
 .mySlides {
   position: relative;
   display: flex;
+  min-width: 100%;
 }
 .mySlides img {
   transition: 0.5s;
+  width: 100%;
 }
 .slider-button {
   width: 100px;
@@ -153,26 +150,29 @@ nav {
   background-color: #76b900;
 }
 .slideshow-container {
-  display: flex;
-  /* width: 7680px; */
   width: 100%;
   overflow: hidden;
-  /* transform: translateX(0px); */
-  animation: animationRight 1s linear;
 }
-
-@keyframes animationRight {
+.slideshow-wrapper {
+  display: flex;
+  width: 100%;
+  transition: transform 2s ease; /* áp dụng animation cho css transform */
+}
+/* Test giờ mình sẽ áp dụng js */
+/* @keyframes animationRight {
   0% {
-    transform: translateX(-10%);
+    transform: translateX(0%);
   }
-  50% {
-    transform: translateX(-20%);
+  30% {
+    transform: translateX(-100%);
+  }
+  60% {
+    transform: translateX(-200%);
   }
   100% {
-    transform: translateX(-25%);
-    /* width: calc(7680px - 25%); */
+    transform: translateX(-300%);
   }
-}
+} */
 
 .gaming {
   width: 1200px;
@@ -204,4 +204,47 @@ nav {
 .gaming {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+}
+.chu-anh-store {
+  position: relative;
+  color: white;
+  top: 50px;
+}
+.gaming-store {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 1200px;
+  margin: 50px auto;
+  position: relative;
+  margin-top: 180px;
+}
+.slide-store {
+  text-align: center;
+  margin: 0 10px 30px 10px;
+  border: solid grey;
+}
+.slide-store {
+  color: white;
+}
+.background-black {
+  background-color: black;
+}
+.price-store {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.price-store button {
+  width: 90px;
+  height: 40px;
+  background-color: black;
+  color: white;
+  border: solid #76b900;
+}
+.price-store p {
+  margin: 10px 0 0 0;
+  font-size: 20px;
+}
+.slide-store img {
+  height: 274px;
 }
