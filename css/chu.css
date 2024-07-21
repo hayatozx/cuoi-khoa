@@ -197,7 +197,7 @@ nav {
 .slide-gaming button {
   width: 300px;
   height: 30px;
-  border: solid rgb(197, 196, 196);
+  border: solid rgb(240, 237, 237);
   font-size: 15px;
   font-weight: 700;
 }
@@ -247,4 +247,23 @@ nav {
 }
 .slide-store img {
   height: 274px;
+}
+.footer img {
+  height: 70px;
+}
+.footer-chu {
+  text-decoration: none;
+  display: flex;
+  padding: 10px 10px 0 10px;
+}
+.footer-chu a {
+  color: grey;
+  text-decoration: none;
+  margin: 10px 10px 0 10px;
+}
+.footer {
+  margin: 0 0 0 80px;
+}
+.footer p {
+  margin: 15px 0 0 20px;
 }

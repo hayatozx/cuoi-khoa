@@ -6,7 +6,7 @@ function redertemplate(item) {
       <div class="slide-gaming">
         <img style="width: 100%" src="${item.Image}" alt="" />
         <h3>${item.name} <br /></h3>
-        <a href=""
+        <a href="../html/store.html"
           ><button>
             Shop Now
             <i
